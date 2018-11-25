@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="facebook_app_id">2160212667339826</string>
+    <string name="fb_login_protocol_scheme">fb2160212667339826</string>
+    <string name="title_welcome1">Thế giới mua sắm trong tầm tay bạn</string>
+    <string name="title_welcome2">Giao hàng tận nơi, thanh toán dễ dàng</string>
+    <string name="title_welcome3">100% Bảo vệ người tiêu dùng</string>
+    <string name="title_seacrh_main">Tìm kiếm trên lazada</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_edt_username">Số điện thoại hoặc email</string>
+    <string name="title_edt_password">Mật khẩu</string>
+    <string name="title_bt_login_withsms">Đăng nhập với sms</string>
+    <string name="title_bt_login_withfacebook">Continue with Facebook</string>
+    <string name="title_bt_login_withgoogle">Continue with Google</string>
+    <string name="title_bt_login">Đăng nhập</string>
+
+    <string name="your_string_here">
+       Tôi đã đọc và hiểu rõ các
+        <font fgcolor="#08f4fc"><u>các điều khoản bảo mật</u></font>
+         của Lazada
+    </string>
+</resources>

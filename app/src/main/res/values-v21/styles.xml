@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="changeColorRatingBar" parent="AppTheme">
+        <item name="android:colorControlNormal">@color/colorOrange</item>
+    </style>
+</resources>

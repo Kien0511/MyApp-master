@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/im_rcv_technology"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorToolbar"
+        android:scaleType="fitXY"
+        android:src="@drawable/festivalsale90" />
+
+    <TextView
+        android:id="@+id/tv_rcv_technology1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray2"
+        android:padding="8dp"
+        android:text="Các thương hiệu lớn"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_technology_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray2"
+        android:clipToPadding="false"
+        android:padding="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_rcv_technology2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray2"
+        android:padding="8dp"
+        android:text="Những sản phẩm nổi bật"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_technology_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray2"
+        android:clipToPadding="false"
+        android:padding="5dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
