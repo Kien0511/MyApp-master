@@ -1,6 +1,7 @@
 package com.dthang.myapp.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,9 +10,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.dthang.myapp.R;
 import com.dthang.myapp.model.objectclass.Product;
+import com.dthang.myapp.view.product_detail.DetailProductActivity;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
@@ -38,7 +41,7 @@ public class TechnologySecondAdapter extends
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final VH holder, int position) {
+    public void onBindViewHolder(@NonNull final VH holder, final int position) {
         holder.tv_name_rcv_technology_second.setText(mListProduct.get(position).getPRODUCT_NAME());
 
         NumberFormat format =  new DecimalFormat("###,###");
@@ -58,6 +61,16 @@ public class TechnologySecondAdapter extends
 
                     }
                 });
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, DetailProductActivity.class);
+
+                intent.putExtra("product_id",   mListProduct.get(position).getPRODUCT_ID());
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
