@@ -35,7 +35,9 @@
 
         <activity android:name=".view.home.HomeActivity" />
         <activity android:name=".view.login_registration.LoginActivity" />
-        <activity android:name=".view.product.ListProductActivity" />
+        <activity android:name=".view.product.ListProductActivity"
+            android:parentActivityName=".view.home.HomeActivity"
+            />
         <activity android:name=".view.product_detail.DetailProductActivity" />
         <activity android:name=".view.welcome.WelcomeActivity"
             android:theme="@style/FullScreenTheme"
@@ -44,6 +46,12 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".view.Cart.CartActivity"
+            android:label="Giỏ hàng"
+            >
+
         </activity>
     </application>
 
