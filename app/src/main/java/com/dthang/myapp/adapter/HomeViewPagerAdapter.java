@@ -28,8 +28,10 @@ public class HomeViewPagerAdapter extends FragmentPagerAdapter {
     }
 
     private void initList() {
-        mListFragments.add(new HighlightsFragment());
-        mListFragments.add(new PromotionsFragment());
+//        mListFragments.add(new HighlightsFragment());
+//        mListFragments.add(new PromotionsFragment());
+        mListFragments.add(new TechnologyFragment());
+        mListFragments.add(new TechnologyFragment());
         mListFragments.add(new TechnologyFragment());
 //        mListFragments.add(new HouseAndLifeFragment());
 //        mListFragments.add(new FashionFragment());
